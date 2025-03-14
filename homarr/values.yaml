@@ -1,0 +1,15 @@
+env:
+  TZ: "America/New York"
+
+
+persistance:
+  homarrDatabase:
+    enabled: true
+    storageClassName: "default"
+    size: "50Mi"
+    accessMode: "ReadWriteOnce"
+    mountPath: "/appdata/db"
+
+service:
+  enabled: true
+  type: LoadBalancer
